@@ -1,0 +1,23 @@
+@charset "UTF-8";
+<style>
+
+body {
+    background-color: aqua;
+
+}
+
+H1 {
+    color: blue;
+    background-color: aquamarine;
+}
+H2 {
+    color: red;
+}
+
+P {
+    text-align: justify;
+    color: blueviolet;
+}
+
+        
+</style>
