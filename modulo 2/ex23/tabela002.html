@@ -10,28 +10,49 @@
             font-family: Arial, Helvetica, sans-serif;
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
 
         td, th {
             border: 1px solid black;
 
         }
+        tbody > tr:nth-child(2n) {
+            background-color:rgb(245, 239, 239);
+        }
+
+        
         .num {
             text-align: right;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 10px;
+             background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>
+            População das Unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -80,12 +101,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">00000000</td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio veniam esse neque suscipit labore ullam porro ipsa quam. Id, quam. Voluptatibus vero veritatis debitis deserunt est ut quidem rerum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro quibusdam magnam aut veniam quis facere voluptas exercitationem illum minima tempora omnis delectus esse nemo, officiis rem vero repellendus illo!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repudiandae dolorem impedit dolor nulla maxime accusamus, doloribus unde tempore facilis explicabo voluptate temporibus adipisci quae quam aliquid aliquam eius labore.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae iusto dolore possimus? Esse dignissimos impedit, doloribus nam porro vitae sint recusandae itaque expedita, excepturi tempore omnis facilis tempora ea?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aliquam rem, quae excepturi in nesciunt facere inventore voluptates est ratione porro, ad, expedita cumque deserunt amet ipsa hic impedit vero?</p>
 
     
 </body>
